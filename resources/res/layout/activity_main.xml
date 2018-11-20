@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <EditText android:enabled="false" android:id="@+id/serverLogText" android:focusable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:ems="10" android:maxLength="9999" android:editable="false" android:layout_weight="1" android:inputType="textMultiLine">
+        <requestFocus/>
+    </EditText>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ToggleButton android:id="@+id/toggleServerButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ToggleButton"/>
+        <Button android:id="@+id/clearLogButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Clear Log"/>
+        <Button android:id="@+id/settingsButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Settings"/>
+    </LinearLayout>
+</LinearLayout>

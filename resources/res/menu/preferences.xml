@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" android:key="proxyPreferences">
+    <PreferenceCategory android:title="Log Settings">
+        <CheckBoxPreference android:title="Log Debug" android:key="logDebug" android:summary="Set to true for more logging" android:defaultValue="false"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Server Settings">
+        <EditTextPreference android:numeric="integer" android:title="HTTP Proxy Listen Port" android:key="httpProxyListenPort" android:summary="The TCP port to listen on for HTTP Proxy requests"/>
+    </PreferenceCategory>
+</PreferenceScreen>
