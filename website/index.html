@@ -1,0 +1,56 @@
+<html>
+<head><title>Android Proxy Server</title>
+<style type="text/css">
+*{margin:0;padding:0;}
+body{
+background:#eee;
+}
+#PageDiv {
+width:600px;
+margin:20px auto;
+background:white;
+border:1px solid #aaa;
+padding:10px;
+}
+
+</style>
+</head>
+<body>
+<div id="PageDiv">
+<h1>Android Proxy Server</h1><hr/>
+<br/>
+The Android Proxy Server can be used to share an Android phone's internet connection with a computer.
+
+
+<h2>Download</h2><hr/>
+Download the Android Proxy Server App here: <a href="ProxyServer.apk">ProxyServer.apk</a>
+
+
+<h2>How To Use</h2><hr/>
+<ol style="margin-left:30px;">
+<li>Download and Install the app to your phone</li>
+<li>Connect your phone to your computer via USB</li>
+<li>Enable USB Debugging on Android Phone
+   <ul style="margin-left:10px;"><li>From the Home screen: Menu > Settings > Applications > Development > USB debugging</li></ul>
+</li>
+<li>On your computer, from the command line run "adb forward tcp:8080 tcp:8080"
+   <ul style="margin-left:10px;"><li>Note: if you do not have the Android SDK installed you can find a standalone version of adb by googling 'download standalone adb'</li></ul>
+</li>
+<li>Set your proxy server to 127.0.0.1 port 8080
+   <ul style="margin-left:10px;">
+       <li>Control Panel > Internet Options > Connections Tab</li>
+       <img src="InternetOptionsWindow.png" />
+       <div>Click 'Lan Settings'</div>
+       <img src="LanSettingsWindow.png" />
+   </ul>
+
+</li>
+</ol>
+
+Now you're all set up and ready to go!
+
+
+
+</div>
+</body>
+</html>
